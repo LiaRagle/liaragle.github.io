@@ -3,17 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: transparent;
 }
 
 /* Body styles */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    color: #8f8f91;
-    background-color: #121212;
     position: relative;
     min-height: 100vh;
     padding-bottom: 60px; /* Space for the footer */
+
 }
 
 /* Header styles */
@@ -22,13 +22,13 @@ header {
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    background-color: #12121295;
+    background-color: transparent;
     padding: 1rem 2rem;
     width: 100vw;
 }
 
 header .logo a img {
-    height:40px;
+    height:50px;
     width: auto;
     
 }
@@ -40,7 +40,7 @@ nav .menu-icon {
 }
 
 nav .menu-icon:hover {
-    color:#787777;
+    color:#ac4933;
 }
 
 nav .nav-links {
@@ -53,7 +53,7 @@ nav .nav-links li {
 }
 
 nav .nav-links li a {
-    color: #8f8f91;
+    color: #875535;
     text-decoration: none;
     font-size: .75rem;
     font-weight: 100;
@@ -62,12 +62,12 @@ nav .nav-links li a {
 }
 
 nav .nav-links li a:hover {
-    color:#787777;
+    color:#ac4933;
 }
 
 nav .nav-links li a.active {
-    font-weight: 400;
-    color:rgb(255, 255, 255);
+    font-weight: 100;
+    color:#ac4933;
 }
 
 /* Responsive styles */
@@ -113,64 +113,31 @@ p {
 
 }
 
-/* Carousel styles */
-.carousel {
-    width:auto;
-    height: auto;
-    position:static;
-    overflow: hidden;
-    vertical-align: middle;
-
-
+.about {
+    background-color: #1B1618;
+    
 }
 
-.carousel-item {
-    display: none;
+#flipbook {
+    width: 80%;
+    max-width: 800px;
+    height: 60%;
+    max-height: 600px;
+    margin: 20px auto;
 }
 
-.carousel-item.active {
-    display: block;
+.page {
+    width: 100%;
+    height: 100%;
 }
 
-.carousel img {
-    width: 100vw; /* Full width of the viewport */
-    height:auto;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.carousel-caption {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0);
-    color: #020202;
-    padding: 0.5rem;
-    font-size: 0.9rem;
-}
 
-.carousel-control-prev,
-.carousel-control-next {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.005);
-    color: #080808;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-}
-
-.carousel-control-prev {
-    left: 10px;
-}
-
-.carousel-control-next {
-    right: 10px;
-}
 
 /* Portfolio items styles */
 .portfolio-items {
@@ -254,8 +221,8 @@ footer {
     position:fixed;
     right: 2rem;
     bottom: 0.5rem;
-    background-color: #12121200;
-    color: #787777;
+    background-color: transparent;
+    color: #ebebeb;
     text-align: right;
     padding: 0rem;
     letter-spacing: 0.05rem;
@@ -266,40 +233,37 @@ footer {
 footer .social-icons {
     display: flex;    
     justify-content: flex-end;
-    margin: 0 0 .1rem 0;
 
 }
 
 footer .social-icons a {
-    color: #636262;
-    margin-left: 1rem;
+    color: #d6d6d6;
+    margin-right: 1rem;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
 }
 
 footer .social-icons a:hover {
-    color: #f9f9f9;
+    color: #ac4933;
 }
 
-footer p {
-    padding: .5rem 0rem;
-}
 ::-webkit-scrollbar {
     width: 5px; /* Width of the vertical scrollbar */
     height: 5px; /* Height of the horizontal scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-    background: #12121260; /* Color of the track */
+    background: transparent; /* Color of the track */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #636262; /* Color of the scroll thumb */
+    background-color: #d6d6d6; /* Color of the scroll thumb */
     border-radius: 10px; /* Rounded corners of the scroll thumb */
-    border: 1px solid #12121260; /* Padding around the scroll thumb */
+    border: transparent; /* Padding around the scroll thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #f9f9f9; /* Color of the scroll thumb on hover */
+    background: #d6d6d6; /* Color of the scroll thumb on hover */
+}
 }
