@@ -1,0 +1,267 @@
+/* Reset default margin and padding */
+*,::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+/* Body styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    //position: absolute;
+    padding-bottom: 60px; /* Space for the footer */
+
+}
+
+/* Header styles */
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    width: 100vw;
+}
+
+header .logo a img {
+    height:50px;
+    max-width: 100%;
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav .menu-icon:hover {
+    color:#ac4933;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 2rem;
+}
+
+nav .nav-links li a {
+    color: #875535;
+    text-decoration: none;
+    font-size: .75rem;
+    //font-weight: 100;
+    vertical-align: text-top;
+
+}
+
+nav .nav-links li a:hover {
+    color:#ac4933;
+}
+
+nav .nav-links li a.active {
+    //font-weight: 100;
+    color:#ac4933;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav .menu-icon {
+        display: block;
+    }
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background-color: #121212;
+        width: 100%;
+        padding: 0rem;
+    }
+    nav .nav-links.active {
+        display: flex;
+    }
+    nav .nav-links li {
+        margin: 2.25rem;
+        text-align: right;
+
+    }
+}
+
+/* Main content styles */
+main {
+    padding-top: 3.5rem;
+    padding-left: 1.5rem;
+}
+
+h2 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #f9f9f9;
+    font-weight: 600;
+}
+
+p {
+    padding: 1rem;
+
+}
+
+.about {
+    background-color: #1B1618;
+    
+}
+
+#flipbook {
+    width: 80%;
+    max-width: 800px;
+    height: 60%;
+    max-height: 600px;
+    margin: 20px auto;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+}
+
+.page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Portfolio items styles */
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.portfolio-item {
+    flex: 1 1 calc(33.333% - 2rem);
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #333;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    color: #f9f9f9;
+}
+
+.portfolio-item p {
+    color: #b0b0b0;
+}
+
+/* Contact form styles */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #f9f9f9;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #f9f9f9;
+}
+
+form button {
+    display: inline-block;
+    background-color: #444;
+    color: #f9f9f9;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+/* Footer styles */
+footer {
+    position:fixed;
+    right: 2rem;
+    bottom: 0.5rem;
+    background-color: transparent;
+    color: #ebebeb;
+    text-align: right;
+    padding: 0rem;
+    letter-spacing: 0.05rem;
+    font-size: .75rem;
+    transform: translateY(0%);
+}
+
+footer .social-icons {
+    display: flex;    
+    justify-content: flex-end;
+
+}
+
+footer .social-icons a {
+    color: #d6d6d6;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #ac4933;
+}
+
+::-webkit-scrollbar {
+    width: 5px; /* Width of the vertical scrollbar */
+    height: 5px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6d6d6; /* Color of the scroll thumb */
+    border-radius: 10px; /* Rounded corners of the scroll thumb */
+    border: transparent; /* Padding around the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d6d6d6; /* Color of the scroll thumb on hover */
+}
